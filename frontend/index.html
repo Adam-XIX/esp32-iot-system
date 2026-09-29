@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESP32 IoT Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>ESP32 IoT Dashboard</h1>
+    <p class="status-badge">Device Status: <span id="status">Connecting...</span></p>
+
+    <div class="metrics-grid">
+      <div class="card">
+        <h3>Temperature</h3>
+        <p class="value"><span id="temp">--</span> °C</p>
+      </div>
+
+      <div class="card">
+        <h3>Humidity</h3>
+        <p class="value"><span id="humidity">--</span> %</p>
+      </div>
+    </div>
+
+    <p class="footer">Auto-refreshing every 2 seconds</p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
